@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+    <head lang="es-AR">
+        <title>
+            {% block title %}{{ page.title }}{% endblock %} &mdash; {{
+            site.title }} &mdash; {{ site.subtitle }}
+        </title>
+        <meta charset="utf-8" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta
+            name="description"
+            content="Calistenia Bahia Blanca. Calistenia en Bahia Blanca. Clases Calistenia Bahia Blanca. Entrenador Calistenia Bahia Blanca. Ejercicios de Calistenia."
+        />
+        <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9746327888231743"
+            crossorigin="anonymous"
+        ></script>
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        {% block head_meta %}
+        <meta name="robots" content="noindex, follow" />
+        {% endblock %}
+        <link
+            rel="apple-touch-startup-image"
+            href="{{ site.url }}/build/2048x2048.png"
+        />
+        <link
+            rel="shortcut icon"
+            href="{{ site.url }}/favicon.ico"
+            type="image/x-icon"
+        />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="preconnect"
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="alternate"
+            type="application/atom+xml"
+            href="{{ site.url }}/atom.xml"
+            title="{{ site.title }} activity feed"
+        />
+        {% block head_styles %} {% endblock %} {% block head_scripts %} {%
+        endblock %}
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="{{ site.url }}/build/app.css" />
+        <link rel="stylesheet" href="{{ site.url }}/assets/css/styles.css" />
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="{{ site.url }}/"
+                        ><img
+                            src="{{ site.url }}/assets/img/logoNegro.svg"
+                            alt="Logo Calistenia BB"
+                            width="64px"
+                            srcset=""
+                    /></a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarCollapse"
+                        aria-controls="navbarCollapse"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link bebas-neue-regular"
+                                    href="{{ site.url }}/"
+                                    >Inicio</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link bebas-neue-regular"
+                                    href="{{ site.url }}/blog"
+                                    >Blog</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link bebas-neue-regular"
+                                    href="{{ site.url }}/recientes"
+                                    >Posteos recientes</a
+                                >
+                            </li>
+                            <!--<li class="nav-item"><a class="nav-link" href="{{ site.url }}/blog/categories">Categorías</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{ site.url }}/blog/tags">Etiquetas</a></li> -->
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    href="{{ site.url }}/anillas"
+                                    >Comprar anillas</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ site.url }}/about"
+                                    >Acerca</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main
+            role="main"
+            class="container"
+            style="padding-top: 10vh !important"
+        >
+            <div class="row-default">
+                <div class="content-shower">
+                    {% block content_wrapper %}{% block content %}{% endblock
+                    %}{% endblock %}
+                </div>
+                <!--
+                <div class="col-sm-4 sidebar">
+                    <div class="card bg-light">
+                        <div class="card-header">{{ site.title }}</div>
+                        <div class="card-body">
+                            {% if site.subtitle %}<small>{{ site.subtitle }}</small>{% endif %}
+                        </div>
+                    </div>
+                    <div class="card bg-light sidebar-nav">
+                        <div class="card-header">Links</div>
+                        <div class="card-body">
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link" href="http://sculpin.io">sculpin.io</a></li>
+                                <li class="nav-item"><a class="nav-link" href="http://twitter.com/getsculpin">@getsculpin</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </main>
+        <footer class="container">
+            <span>&copy; {{ "now"|date("Y") }} {{ site.title }}</span>
+            <br />
+            <span style="font-size: 0.8rem; font-weight: 300"
+                >jonathandb917@gmail.com</span
+            >
+            <br />
+            <div class="socials">
+                <a
+                    href="
+                https://wa.link/ez84d6"
+                    target="__blank"
+                    ><img
+                        width="24px"
+                        src="{{site.url}}/assets/icons/whapp.svg"
+                        alt=""
+                /></a>
+                <a
+                    href="https://www.facebook.com/calistenia.bb"
+                    target="__blank"
+                    ><img
+                        width="24px"
+                        src="{{site.url}}/assets/icons/face.svg"
+                        alt=""
+                /></a>
+                <a
+                    href="https://www.instagram.com/calistenia.bb"
+                    target="__blank"
+                    ><img
+                        width="24px"
+                        s
+                        src="{{site.url}}/assets/icons/ig.svg"
+                        alt=""
+                /></a>
+            </div>
+        </footer>
+
+        <script src="{{ site.url }}/build/app.js"></script>
+        {% block scripts %} {% endblock %} {% if
+        site.google_analytics_tracking_id %}
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i["GoogleAnalyticsObject"] = r;
+                (i[r] =
+                    i[r] ||
+                    function () {
+                        (i[r].q = i[r].q || []).push(arguments);
+                    }),
+                    (i[r].l = 1 * new Date());
+                (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m);
+            })(
+                window,
+                document,
+                "script",
+                "//www.google-analytics.com/analytics.js",
+                "ga"
+            );
+
+            ga("create", "{{site.google_analytics_tracking_id}}", "auto");
+            ga("send", "pageview");
+
+            const carousel = new bootstrap.Carousel("#carouselLand1");
+
+            const myModal = document.getElementById("entrenarModal");
+            const myInput = document.getElementById("entrenarBtn");
+
+            myModal.addEventListener("shown.bs.modal", () => {
+                myInput.focus();
+            });
+        </script>
+        {% endif %} {% block scripts_after %} {% endblock %}
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

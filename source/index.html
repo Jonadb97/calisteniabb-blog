@@ -1,0 +1,81 @@
+---
+layout: default
+title: Home
+generator: pagination
+pagination:
+    max_per_page: 3
+use:
+    - posts
+---
+<h1 class="title-landing">Calistenia <span class="green">BB</span></h1>
+<h2 class="subtitle-landing">Clases de Calistenia Presenciales y Online</h2>
+<div class="home-container-land">
+    <button id="entrenarBtn" type="button" class="entrenar-btn" data-bs-toggle="modal" data-bs-target="#entrenarModal">ENTRENAR</button>
+    <div class="modal fade" tabindex="-1" id="entrenarModal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header header-entrenar">
+              <h5 class="modal-title">¿Entrenar en Bahía Blanca o Online?</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body body-entrenar">
+              <button class="entrenar-modal-btn"><a href="{{site.url}}/entrenarBahia">Estoy en <strong>Bahía Blanca</strong></a></button>
+              <button class="entrenar-modal-btn"><a href="{{site.url}}/entrenarOnline">Quiero entrenar <strong>a distancia</strong></a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+<div id="carouselLand1" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{{site.url}}/assets/img/home/slider1/foto1.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img class="land-img1" src="{{site.url}}/assets/img/home/slider1/foto2.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img class="land-img1" src="{{site.url}}/assets/img/home/slider1/foto3.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselLand1" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselLand1" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="home-container-about">
+    <div class="first-col-land">
+        <h1>Acerca de Calistenia BB</h1>
+        <p>Calistenia BB fue creado como blog para compartir información con respecto a la Calistenia y todo lo relacionado. <!--También cuenta con una sección glosario de ejercicios que uso personalmente con mis alumnes o para usar en conjunto con las rutinas del sitio. --></p>
+        <p>
+            El principal objetivo de las clases/rutinas es ganar fuerza para luego aplicarla a los movimientos avanzados de la disciplina. Se trata de una actividad multinivel y me gusta llevar el entrenamiento de fuerza a todo el público y promover los beneficios que este trae. En primer lugar se establece un margen probando movimientos fundamentales y de ahí se ve como adaptamos el entrenamiento dependiendo los objetivos de cada une.
+        </p>
+    </div>
+    <div class="second-col-land">
+        <div id="carouselLand2" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="{{site.url}}/assets/img/home/slider2/foto1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="{{site.url}}/assets/img/home/slider2/foto2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="{{site.url}}/assets/img/home/slider2/foto3.jpg" class="d-block w-100" style="object-position: 50% 65%;" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselLand2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon carousel2-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselLand2" data-bs-slide="next">
+              <span class="carousel-control-next-icon carousel2-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+  </div>

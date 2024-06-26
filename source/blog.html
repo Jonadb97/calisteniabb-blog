@@ -1,0 +1,83 @@
+---
+layout: default
+title: Posts Archive
+generator: pagination
+use:
+    - posts
+
+---
+{% set year = '0' %}
+<h1><span class="green">Archivo</span> de Posts</h1>
+{% for post in page.pagination.items %}
+{% set this_year %}{{ post.date | date("Y") }}{% endset %}
+{% if year != this_year %}
+  {% set month = '0' %}
+  {% set year = this_year %}
+{% endif %}
+{% set this_month %}{{ post.date | date("F") }}{% endset %}
+{% if month != this_month %}
+  {% set month = this_month %}
+  <h3>{{ month }} <span class="green">{{ year }}</span></h3>
+{% endif %}
+  <div>
+    <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+  </div>
+{% endfor %}
+
+<div>
+{% if page.pagination.previous_page or page.pagination.next_page %}
+    <nav class="article clearfix">
+    {% if page.pagination.previous_page %}
+    <a class="previous" href="{{ site.url }}{{ page.pagination.previous_page.url }}" title="Previous Page"><span class="title">Página anterior</span></a>
+    {% endif %}
+    {% if page.pagination.next_page %}
+    <a class="next" href="{{ site.url }}{{ page.pagination.next_page.url }}" title="Next Page"><span class="title">Siguiente Página</span></a>
+    {% endif %}
+    </nav>
+{% endif %}
+</div>
+<script>
+              let headers3 = document.getElementsByTagName("h3");
+            console.log(headers3);
+            for(item in headers3) {
+              console.log(headers3[item].innerHTML);
+
+              if (headers3[item].innerHTML && headers3[item].innerHTML.includes('January')) {
+                let replacement = headers3[item].innerHTML.replace("January", "Enero");
+                headers3[item].innerHTML = replacement;
+              } else if (headers3[item].innerHTML && headers3[item].innerHTML.includes('February')) {
+                let replacement = headers3[item].innerHTML.replace("February", "Febrero");
+                headers3[item].innerHTML = replacement;
+              } else if (headers3[item].innerHTML && headers3[item].innerHTML.includes('March')) {
+                let replacement = headers3[item].innerHTML.replace("March", "Marzo");
+                headers3[item].innerHTML = replacement;
+              } else if (headers3[item].innerHTML && headers3[item].innerHTML.includes('April')) {
+                let replacement = headers3[item].innerHTML.replace("April", "Abril");
+                headers3[item].innerHTML = replacement;
+              } else if (headers3[item].innerHTML && headers3[item].innerHTML.includes('May')) {
+                let replacement = headers3[item].innerHTML.replace("May", "Mayo");
+                headers3[item].innerHTML = replacement;
+              } else if (headers3[item].innerHTML && headers3[item].innerHTML.includes('June')) {
+                let replacement = headers3[item].innerHTML.replace("June", "Junio");
+                headers3[item].innerHTML = replacement;
+              } else if (headers3[item].innerHTML && headers3[item].innerHTML.includes('July')) {
+                let replacement = headers3[item].innerHTML.replace("July", "Julio");
+                headers3[item].innerHTML = replacement;
+              } else if (headers3[item].innerHTML && headers3[item].innerHTML.includes('August')) {
+                let replacement = headers3[item].innerHTML.replace("August", "Agosto");
+                headers3[item].innerHTML = replacement;
+              } else if (headers3[item].innerHTML && headers3[item].innerHTML.includes('September')) {
+                let replacement = headers3[item].innerHTML.replace("September", "Septiembre");
+                headers3[item].innerHTML = replacement;
+              } else if (headers3[item].innerHTML && headers3[item].innerHTML.includes('October')) {
+                let replacement = headers3[item].innerHTML.replace("October", "Octubre");
+                headers3[item].innerHTML = replacement;
+              } else if (headers3[item].innerHTML && headers3[item].innerHTML.includes('November')) {
+                let replacement = headers3[item].innerHTML.replace("November", "Noviembre");
+                headers3[item].innerHTML = replacement;
+              } else if (headers3[item].innerHTML && headers3[item].innerHTML.includes('December')) {
+                let replacement = headers3[item].innerHTML.replace("December", "Diciembre");
+                headers3[item].innerHTML = replacement;
+              }
+            }
+</script>
