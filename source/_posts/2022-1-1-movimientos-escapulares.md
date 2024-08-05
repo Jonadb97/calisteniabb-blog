@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "🙆️ Movimientos escapulares 🙆️"
-date: 2021-08-12 21:14:10
 categories: post
 tags: [escápula, espalda, tire, tracción, empuje]
 ---
