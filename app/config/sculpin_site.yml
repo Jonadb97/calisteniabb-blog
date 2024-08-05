@@ -3,7 +3,7 @@
 # in a template to get the contents of the `title` key.
 title: Calistenia BB
 subtitle: Blog y glosario de Calistenia
-url: #calisteniabb-blog-page/
+url: calisteniabb-blog-page/
 
 # Insert your disqus shortname
 disqus:
