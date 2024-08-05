@@ -2,7 +2,7 @@
 layout: post
 title: "🙆️ Movimientos escapulares 🙆️"
 categories: post
-tags: [escápula, espalda, tire, tracción, empuje]
+tags: escápula, espalda, tire, tracción, empuje
 ---
 # ¿Qué es la escápula y qué músculos la involucran?
 

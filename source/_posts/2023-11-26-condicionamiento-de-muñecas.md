@@ -2,7 +2,7 @@
 layout: post
 title: "🤸‍♀️ Condicionamiento de muñecas 🤸‍♀️"
 categories: post
-tags: [ejercicio, ejercicios, articulaciones]
+tags: ejercicio, ejercicios, articulaciones
 ---
 ## ¿Para qué preparar las muñecas?
 Es importante condicionar las muñecas a la hora de entrenar calistenia o hacer paradas de manos porque en estas disciplinas las cargamos con un peso importante, al cual no están acostumbradas y además las llevamos a rangos inusuales. De no anticiparnos a esto podemos lesionarnos si no las preparamos correctamente.
